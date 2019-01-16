@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var nums = [];
+        for (var i = 0; i < 101; i ++){
+            nums.push(i);
+        }
+        var secretNumber = nums[82];
+        var number = parseInt(prompt('Mời bạn đoán số bí mật: '));
+        do {
+            if(number == secretNumber){
+                alert('Bingo! Bạn đã đoán đúng số bí mật.');
+                break;
+            } else if( number < secretNumber){
+                alert("Too low." );
+                var number1 = parseInt(prompt('Bạn đã đoán sai. Số bí mật lớn hơn số bạn đoán. Mời bạn đoán lại.'));
+                number =number1;
+            } else{
+                alert("Too high.");
+                var number1 = parseInt(prompt('Bạn đã đoán sai. Số bí mật nhỏ hơn số bạn đoán. Mời bạn đoán lại.'));
+                number =number1;
+            }
+        }while (0 < 1) ;
+
+    </script>
+</body>
+</html>
